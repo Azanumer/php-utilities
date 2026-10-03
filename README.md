@@ -8,6 +8,7 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 |---|---|
 | `src/helpers.php` | `slugify()`, `time_ago()`, `format_bytes()`, `esc()` |
 | `src/FileCache.php` | Tiny file-based cache class (`get`/`set`/`delete`) — no Redis needed |
+| `src/SimplePaginator.php` | Framework-free pagination class (`offset()`, `render()`) |
 | `examples/example.php` | Working usage examples for everything above |
 
 ## Usage
