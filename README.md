@@ -9,7 +9,9 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `src/helpers.php` | `slugify()`, `time_ago()`, `format_bytes()`, `esc()` |
 | `src/FileCache.php` | Tiny file-based cache class (`get`/`set`/`delete`) — no Redis needed |
 | `src/SimplePaginator.php` | Framework-free pagination class (`offset()`, `render()`) |
+| `src/SmtpMailer.php` | Dependency-free SMTP mailer — STARTTLS (587) + implicit TLS (465), no PHPMailer |
 | `examples/example.php` | Working usage examples for everything above |
+| `examples/smtp-mailer-example.php` | SMTP send example (fill in your own credentials) |
 
 ## Usage
 
