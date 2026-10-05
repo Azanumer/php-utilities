@@ -10,8 +10,10 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `src/FileCache.php` | Tiny file-based cache class (`get`/`set`/`delete`) — no Redis needed |
 | `src/SimplePaginator.php` | Framework-free pagination class (`offset()`, `render()`) |
 | `src/SmtpMailer.php` | Dependency-free SMTP mailer — STARTTLS (587) + implicit TLS (465), no PHPMailer |
+| `src/TokenBucketRateLimiter.php` | File-based token-bucket rate limiter (flock-safe, no Redis) for APIs/logins |
 | `examples/example.php` | Working usage examples for everything above |
 | `examples/smtp-mailer-example.php` | SMTP send example (fill in your own credentials) |
+| `examples/rate-limiter-example.php` | Token-bucket limiter demo (5 req/10s burst, 429 + Retry-After) |
 
 ## Usage
 
