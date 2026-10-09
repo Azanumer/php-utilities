@@ -14,12 +14,14 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `src/Logger.php` | PSR-3-style file logger — levels, daily rotation, `{context}` interpolation, flock-safe |
 | `src/Dotenv.php` | Tiny `.env` loader (`load()`/`get()`), quoted values, inline comments, never clobbers real env |
 | `src/CsrfGuard.php` | Session-based CSRF protection — single-use rotating tokens, `field()`/`validate()`, no dependencies |
+| `src/SecurityHeaders.php` | Security header builder — HSTS, CSP with nonces, Permissions-Policy/COOP/COEP, report-only mode, `apply()`/`toArray()` |
 | `examples/example.php` | Working usage examples for everything above |
 | `examples/smtp-mailer-example.php` | SMTP send example (fill in your own credentials) |
 | `examples/rate-limiter-example.php` | Token-bucket limiter demo (5 req/10s burst, 429 + Retry-After) |
 | `examples/logger-example.php` | Logger demo — levels, min-level filtering, `{context}` placeholders |
 | `examples/dotenv-example.php` | Dotenv demo — quotes, inline comments, defaults, real-env-wins |
 | `examples/csrf-guard-example.php` | CSRF demo — protected form, single-use token, double-submit rejected |
+| `examples/security-headers-example.php` | SecurityHeaders demo — hardened defaults, HSTS, CSP nonce in an inline script, `toArray()` inspection |
 
 ## Usage
 
