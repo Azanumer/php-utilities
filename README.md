@@ -17,6 +17,7 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `src/SecurityHeaders.php` | Security header builder — HSTS, CSP with nonces, Permissions-Policy/COOP/COEP, report-only mode, `apply()`/`toArray()` |
 | `src/WhoisClient.php` | Dependency-free WHOIS client (port 43) — referral-following, `getExpiry()`, `daysUntilExpiry()`, `getRegistrar()` |
 | `src/UploadedFile.php` | Secure upload handler — finfo MIME sniffing vs extension whitelist, size limit, random filenames, path confinement |
+| `src/Encryption.php` | Authenticated encryption (XChaCha20-Poly1305/secretbox) — HKDF key derivation, `kid` key rotation, tamper-proof packed format |
 | `examples/example.php` | Working usage examples for everything above |
 | `examples/smtp-mailer-example.php` | SMTP send example (fill in your own credentials) |
 | `examples/rate-limiter-example.php` | Token-bucket limiter demo (5 req/10s burst, 429 + Retry-After) |
@@ -26,6 +27,7 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `examples/security-headers-example.php` | SecurityHeaders demo — hardened defaults, HSTS, CSP nonce in an inline script, `toArray()` inspection |
 | `examples/whois-example.php` | WHOIS demo — registrar, expiry date, days-until-expiry for domains on the command line |
 | `examples/upload-example.php` | Upload demo — browser form + CLI mode that validates a local file without HTTP |
+| `examples/encryption-example.php` | Encryption demo — basic round-trip, tamper rejection, context binding, key rotation |
 
 ## Usage
 
