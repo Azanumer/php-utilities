@@ -21,6 +21,7 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `src/IpAddress.php` | Client-IP detection behind trusted proxies (X-Forwarded-For right-to-left walk, CF-Connecting-IP), CIDR/range checks IPv4+IPv6, `isPrivate()`, Cloudflare ranges helper |
 | `src/SessionGuard.php` | Session hardening — strict cookie params (Secure/HttpOnly/SameSite), idle + absolute timeouts, IP/UA binding, probabilistic ID rotation |
 | `src/PasswordPolicy.php` | Entropy-based password strength — pool entropy minus repeat/sequence penalties, common-password blocklist, `analyze()`/`passes()`/`suggest()` |
+| `src/HtmlSanitizer.php` | Allow-list HTML sanitizer — drops script/iframe, strips event handlers + `javascript:` URLs, unwraps unknown tags, `allowTags()`/`allowAttributes()` policies |
 | `examples/example.php` | Working usage examples for everything above |
 | `examples/smtp-mailer-example.php` | SMTP send example (fill in your own credentials) |
 | `examples/rate-limiter-example.php` | Token-bucket limiter demo (5 req/10s burst, 429 + Retry-After) |
@@ -34,6 +35,7 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `examples/ip-address-example.php` | IpAddress demo — CIDR checks, simulated proxy headers, Cloudflare mode |
 | `examples/session-guard-example.php` | SessionGuard flow — start, validate, touch, rotate after login (browser demo) |
 | `examples/password-policy-example.php` | PasswordPolicy demo — weak vs strong passwords scored, quick `passes()` check, `suggest()` generator |
+| `examples/html-sanitizer-example.php` | HtmlSanitizer demo — hostile input cleaned under default and strict policies |
 
 ## Usage
 
