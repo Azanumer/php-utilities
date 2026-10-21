@@ -36,6 +36,8 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `examples/session-guard-example.php` | SessionGuard flow — start, validate, touch, rotate after login (browser demo) |
 | `examples/password-policy-example.php` | PasswordPolicy demo — weak vs strong passwords scored, quick `passes()` check, `suggest()` generator |
 | `examples/html-sanitizer-example.php` | HtmlSanitizer demo — hostile input cleaned under default and strict policies |
+| `src/ArrayDot.php` | Dot-notation access for nested arrays — `get`/`set`/`has`/`forget`, `pluck`, `flatten`, `only`/`except` |
+| `examples/array-dot-example.php` | ArrayDot demo — nested reads with defaults, safe removal, column pluck, flatten |
 
 ## Usage
 
