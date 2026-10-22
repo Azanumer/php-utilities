@@ -38,6 +38,8 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `examples/html-sanitizer-example.php` | HtmlSanitizer demo — hostile input cleaned under default and strict policies |
 | `src/ArrayDot.php` | Dot-notation access for nested arrays — `get`/`set`/`has`/`forget`, `pluck`, `flatten`, `only`/`except` |
 | `examples/array-dot-example.php` | ArrayDot demo — nested reads with defaults, safe removal, column pluck, flatten |
+| `src/Uuid.php` | RFC 4122 UUIDs — `v4()` random, `v7()` time-ordered (DB-index friendly), `isValid()`, `version()`, `toBytes()`/`fromBytes()` for `BINARY(16)` columns |
+| `examples/uuid-example.php` | Uuid demo — v4/v7 generation, time-ordering check, binary round-trip, invalid input |
 
 ## Usage
 
