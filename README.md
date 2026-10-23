@@ -40,6 +40,8 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `examples/array-dot-example.php` | ArrayDot demo — nested reads with defaults, safe removal, column pluck, flatten |
 | `src/Uuid.php` | RFC 4122 UUIDs — `v4()` random, `v7()` time-ordered (DB-index friendly), `isValid()`, `version()`, `toBytes()`/`fromBytes()` for `BINARY(16)` columns |
 | `examples/uuid-example.php` | Uuid demo — v4/v7 generation, time-ordering check, binary round-trip, invalid input |
+| `src/HttpClient.php` | Dependency-free cURL HTTP client — `get`/`post`/`postJson`/`put`/`delete`/`bearer`, JSON body decoding, redirect + SSL options, strict `throw` mode |
+| `examples/http-client-example.php` | HttpClient demo — GET with query, JSON POST, bearer auth, strict-mode exception on 404 |
 
 ## Usage
 
