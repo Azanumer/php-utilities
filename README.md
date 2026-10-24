@@ -42,6 +42,8 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `examples/uuid-example.php` | Uuid demo — v4/v7 generation, time-ordering check, binary round-trip, invalid input |
 | `src/HttpClient.php` | Dependency-free cURL HTTP client — `get`/`post`/`postJson`/`put`/`delete`/`bearer`, JSON body decoding, redirect + SSL options, strict `throw` mode |
 | `examples/http-client-example.php` | HttpClient demo — GET with query, JSON POST, bearer auth, strict-mode exception on 404 |
+| `src/Retry.php` | Exponential-backoff retry helper — `Retry::run()`, jitter, `retry_on` filter, `on_retry` hook, injectable sleeper |
+| `examples/retry-example.php` | Retry demo — backoff schedule, flaky-call recovery, fail-fast on non-retryable errors |
 
 ## Usage
 
