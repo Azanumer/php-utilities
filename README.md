@@ -46,6 +46,8 @@ Small, dependency-free PHP helpers you can drop into any project. No framework, 
 | `examples/retry-example.php` | Retry demo — backoff schedule, flaky-call recovery, fail-fast on non-retryable errors |
 | `src/Money.php` | Immutable money value object — integer minor units (no float errors), fromMajor/fromMinor, add/subtract/multiply, zero-decimal currencies, same-currency guard |
 | `examples/money-example.php` | Money demo — exact 19.99 + 0.01 = 20.00, PKR multiply/subtract, JPY zero-decimal, cross-currency rejection |
+| `src/Color.php` | Color utilities — hex/RGB/HSL conversion, lighten/darken, WCAG luminance, contrast ratio, best readable text color |
+| `examples/color-example.php` | Color demo — brand tint/shade, HSL readout, best text color, 3-digit hex shorthand |
 
 ## Usage
 
